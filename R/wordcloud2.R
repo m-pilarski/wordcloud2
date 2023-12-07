@@ -7,7 +7,7 @@
 ##' wordcloud2(data, size = 1, minSize = 0, gridSize =  0,
 ##'     fontFamily = 'Segoe UI', fontWeight = 'bold',
 ##'     color = 'random-dark', backgroundColor = "white",
-##'     minRotation = -pi/4, maxRotation = pi/4, shuffle = TRUE,
+##'     minRotation = -pi/4,  = pi/4, shuffle = TRUE,
 ##'     rotateRatio = 0.4, shape = 'circle', ellipticity = 0.65,
 ##'     widgetsize = NULL, figPath = NULL, hoverFunction = NULL)
 ##'
@@ -25,6 +25,7 @@
 ##' (in rad) the text should rotate.
 ##' @param maxRotation If the word should rotate, the maximum rotation (in rad) the text should rotate.
 ##' Set the two value equal to keep all text in one angle.
+##' @param rotationSteps ...
 ##' @param shuffle  Shuffle the points to draw so the result will be different each time for the same list and settings.
 ##' @param rotateRatio Probability for the word to rotate. Set the number to 1 to always rotate.
 ##' @param shape The shape of the "cloud" to draw. Can be a keyword present. Available presents are 'circle'
@@ -86,6 +87,7 @@ wordcloud2 <- function(data,
                        backgroundColor = "white",
                        minRotation = -pi/4,
                        maxRotation = pi/4,
+                       rotationSteps = NULL,
                        shuffle = TRUE,
                        rotateRatio = 0.4,
                        shape = 'circle',
@@ -140,6 +142,7 @@ wordcloud2 <- function(data,
     gridSize =  gridSize,
     minRotation = minRotation,
     maxRotation = maxRotation,
+    rotationSteps = rotationSteps,
     shuffle = shuffle,
     rotateRatio = rotateRatio,
     shape = shape,
