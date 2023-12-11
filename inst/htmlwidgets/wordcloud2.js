@@ -36,11 +36,13 @@ HTMLWidgets.widget({
                         gridSize: x.gridSize,
                         minRotation: x.minRotation,
                         maxRotation: x.maxRotation,
+                        rotationSteps: x.rotationSteps,
                         shuffle: x.shuffle,
                         shape: x.shape,
                         rotateRatio: x.rotateRatio,
                         ellipticity: x.ellipticity,
                         drawMask: x.drawMask,
+                        shrinkToFit: x.shrinkToFit,
                         maskColor: x.maskColor,
                         maskGapWidth: x.maskGapWidth,
                         hover: x.hover || cv_handleHover
